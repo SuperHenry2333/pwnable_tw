@@ -15,4 +15,4 @@
 #### iv.asm("asm code")把汇编代码转为字节码
 ###5.sysenter相当于int 0x80
 ##疑问：
-在open()的int 0x80之前，eax怎么是0x27？
+在open()的int 0x80之前，eax怎么是0x127？
