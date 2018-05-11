@@ -5,6 +5,7 @@
 ## 技巧
 ### 1.需要libc地址时，可以gdb在附近地址寻找类似libc地址的内存
 ### 2.在gdb中查找字符串find "str"
-### 3.指定libc
+### 3.在脚本中查找字符串 next(elf.search("/bin/sh\x00"))
+### 4.指定libc
 #### a)gdb中set environment LD_PRELOAD=...
 #### b)脚本中p=process("./dubblesort",env={"LD_PRELOAD":"./libc_32.so.6"})
