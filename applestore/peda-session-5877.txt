@@ -1,4 +1,0 @@
-break *0x8048BD3
-break *0x8048bd6
-break *0x804887A
-
